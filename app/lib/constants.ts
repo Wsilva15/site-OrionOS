@@ -28,7 +28,7 @@ export const HERO = {
 
 export const SERVICES = {
   heading: "O que entregamos",
-  subheading: "Três soluções. Zero enrolação.",
+  subheading: "Duas soluções. Zero enrolação.",
   items: [
     {
       icon: "Monitor",

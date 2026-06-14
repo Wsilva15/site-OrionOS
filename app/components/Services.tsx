@@ -11,7 +11,7 @@ const icons: Record<string, React.ReactNode> = {
 
 export default function Services() {
   return (
-    <section id="servicos" className="py-28 md:py-36">
+    <section id="servicos" className="py-16 md:py-28">
       <div className="max-w-6xl mx-auto px-6">
         {/* Heading */}
         <motion.div
@@ -19,7 +19,7 @@ export default function Services() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-16"
+          className="mb-10 md:mb-16"
         >
           <p
             className="text-xs font-semibold tracking-widest uppercase text-white/30 mb-4"
@@ -48,7 +48,7 @@ export default function Services() {
               key={item.title}
               initial={{ opacity: 0, y: 32 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.55, delay: i * 0.1 }}
               className="group relative p-8 rounded-xl border border-white/8 bg-[#0d0d0d] transition-all duration-300 hover:-translate-y-1 hover:border-white/18 hover:shadow-[0_8px_32px_rgba(0,0,0,0.4)]"
             >

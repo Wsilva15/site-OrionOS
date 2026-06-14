@@ -9,18 +9,15 @@ export default function Hero() {
       id="hero"
       className="relative min-h-screen flex items-center overflow-hidden"
     >
-      {/* Bottom fade into next section */}
+      {/* Bottom fade */}
       <div
         className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none"
-        style={{
-          zIndex: 1,
-          background: "linear-gradient(to bottom, transparent, #050505)",
-        }}
+        style={{ background: "linear-gradient(to bottom, transparent, #050505)" }}
       />
 
-      {/* Content */}
-      <div className="relative max-w-6xl mx-auto px-6 pt-24 pb-32 w-full" style={{ zIndex: 2 }}>
-        <div className="max-w-[52%]">
+      <div className="relative max-w-6xl mx-auto px-6 pt-24 pb-32 w-full">
+        {/* Content block — full width on mobile, constrained on desktop */}
+        <div className="w-full lg:max-w-[56%]">
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -41,7 +38,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.35 }}
-            className="text-[clamp(3rem,6vw,5.5rem)] font-bold leading-none tracking-tight mb-6 text-white"
+            className="text-[clamp(2.8rem,7vw,5.5rem)] font-bold leading-none tracking-tight mb-6 text-white"
             style={{ fontFamily: "var(--font-rajdhani)", letterSpacing: "-0.02em" }}
           >
             {HERO.headline.map((line, i) => (
@@ -99,6 +96,8 @@ export default function Hero() {
             </a>
             <a
               href={HERO.cta.secondary.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold text-sm text-white/70 border border-white/15 transition-all duration-200 hover:text-white hover:border-white/30 hover:bg-white/5"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >

@@ -34,7 +34,9 @@ export default function RootLayout({
     >
       <body className="min-h-full bg-background text-foreground antialiased">
         <GlobalStarField />
-        {children}
+        <div style={{ position: "relative", zIndex: 2 }}>
+          {children}
+        </div>
       </body>
     </html>
   );
