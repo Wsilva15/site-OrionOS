@@ -41,8 +41,8 @@ export const SERVICES = {
       icon: "MessageSquare",
       title: "Agente de IA no WhatsApp",
       description:
-        "Um agente que atende, qualifica e responde clientes 24h por dia — integrado ao seu CRM e com linguagem no seu tom de voz.",
-      tags: ["IA", "WhatsApp", "CRM"],
+        "Um agente que atende, qualifica e responde clientes 24h por dia — com controle total dos atendimentos e linguagem no seu tom de voz.",
+      tags: ["IA", "WhatsApp", "Atendimento 24h"],
     },
   ],
 };
@@ -85,8 +85,8 @@ export const CASES = {
       tag: "Sistema",
       title: "Sistema de Cobrança",
       description:
-        "Painel completo para gestão de cobranças recorrentes com notificações automáticas, relatórios e CRM integrado. Reduziu o tempo de gestão financeira em 60%.",
-      tech: ["Dashboard", "CRM", "Automação"],
+        "Painel completo para gestão de cobranças recorrentes com notificações automáticas, relatórios e histórico de clientes integrado. Reduziu o tempo de gestão financeira em 60%.",
+      tech: ["Dashboard", "Clientes", "Automação"],
       color: "#4f8ef7",
       // URL-encoded paths for filenames with spaces
       images: [

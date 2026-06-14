@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: "OrionOS — Sites, Sistemas e IA para empresas",
   description:
     "Desenvolvemos sites premium, sistemas sob medida e agentes de IA no WhatsApp. Tecnologia que trabalha enquanto você foca no que importa.",
-  keywords: ["sites premium", "agente whatsapp ia", "sistemas web", "crm kanban"],
+  keywords: ["sites premium", "agente whatsapp ia", "sistemas web", "gestão de clientes"],
 };
 
 export default function RootLayout({
